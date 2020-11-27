@@ -59,6 +59,7 @@ function Row({title, fetchUrl, isLargeRow}) {
                 src={`${base_url}${isLargeRow ? movie.poster_path: movie.poster_path}`} alt ={movie.name}/>
             ))}
             </div>
+            
             {trailerUrl && <YouTube videoId = {trailerUrl} opts ={opts} />}
             
         </div>
